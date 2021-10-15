@@ -47,4 +47,3 @@ async def get_item(item: Item):
             status_code=status.HTTP_404_NOT_FOUND,
             detail=f'item with id = {item_id} not found')
     return await item_db.update(**item.dict())
-
