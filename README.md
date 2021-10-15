@@ -28,8 +28,11 @@ DB_PORT=<5432>
 ```
 docker-compose up -d --build
 ```
-
 * Примените миграции:
 ```
 docker-compose exec web alembic upgrade head
+```
+* Для отключения пропишите:  
+```
+docker-compose up -d --build
 ```
